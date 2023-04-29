@@ -29,7 +29,7 @@ function myAlert(message) {//mensaje modificado de alerta
     alert.style.display = 'block';
     setTimeout(function() {
       alert.style.display = 'none';
-    }, 3000); // Oculta el alert después de 3 segundos
+    }, 2000); // Oculta el alert después de 3 segundos
 }
 function focusTextArea() {
     var textarea = document.getElementById("input_text_encrypt");
