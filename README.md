@@ -14,7 +14,7 @@ Contiene un pie de página con un apartado para contacto y un apartado de social
 
 ## 📑 Reglas de funcionamiento
 
-#### ___ ⚠️ Para el correcto uso se crearon condiciones:___
+####  ⚠️ Para el correcto uso se crearon condiciones:
 
 ✅ Solo se pueden utilizar letras minúsculas.
 
@@ -60,4 +60,4 @@ Hecho con el 💖 por [Ivon E. Escobar](https://github.com/IvonEsc)
 
 ## 📧 Feedback
 
-_Si tienes alguna consulta o opinion, por favor no dudes en escribirme a_ eiescobar02@gmail.com 😉 
+_Si tienes alguna consulta u opinion, por favor no dudes en escribirme a_ eiescobar02@gmail.com 😉 
