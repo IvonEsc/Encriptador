@@ -53,7 +53,7 @@ function encriptarMensaje() {
             actualizarPagina();
         }
         else{
-            myAlert("Por favor escribe un texto valido!"
+            myAlert("Por favor escribe un texto valido!");
             focusTextArea();
         }
     }   
