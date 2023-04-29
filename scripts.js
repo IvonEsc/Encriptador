@@ -35,33 +35,31 @@ function focusTextArea() {
     var textarea = document.getElementById("input_text_encrypt");
     textarea.focus();
 }
-
 function encriptarMensaje() {
-    if (textoEntrada.value != "") {
-        //verificacion se mayusculas y simbolos
-        let regExp = /^[a-z\s]+$/;
-        
-        if (regExp.test(textoEntrada.value)){
-            let mensajeEncriptado = textoEntrada.value;
-            mensajeEncriptado = mensajeEncriptado.replace(/e/gim, "enter");
-            mensajeEncriptado = mensajeEncriptado.replace(/i/gim, "imes");
-            mensajeEncriptado = mensajeEncriptado.replace(/a/gim, "ai");
-            mensajeEncriptado = mensajeEncriptado.replace(/o/gim, "ober");
-            mensajeEncriptado = mensajeEncriptado.replace(/u/gim, "ufat");        
-            textoSalida.innerHTML = mensajeEncriptado;
-            textoSalida.value = mensajeEncriptado;
-            actualizarPagina();
-        }
-        else{
-            myAlert("Por favor escribe un texto valido!");
-            focusTextArea();
-        }
-    }   
-    else {
-        myAlert("Por favor escribe un texto");
-        focusTextArea();
+  if (textoEntrada.value != "") {
+    // expresión regular para verificar minúsculas y espacios
+    let regExp = /^[a-z\s]+$/;
+
+    if (regExp.test(textoEntrada.value)) {
+      let mensajeEncriptado = textoEntrada.value;
+      mensajeEncriptado = mensajeEncriptado.replace(/e/gim, "enter");
+      mensajeEncriptado = mensajeEncriptado.replace(/i/gim, "imes");
+      mensajeEncriptado = mensajeEncriptado.replace(/a/gim, "ai");
+      mensajeEncriptado = mensajeEncriptado.replace(/o/gim, "ober");
+      mensajeEncriptado = mensajeEncriptado.replace(/u/gim, "ufat");
+      textoSalida.innerHTML = mensajeEncriptado;
+      textoSalida.value = mensajeEncriptado;
+      actualizarPagina();
+    } else {
+      myAlert("Por favor escribe un texto válido, solo letras minúsculas y espacios.");
+      focusTextArea();
     }
+  } else {
+    myAlert("Por favor escribe un texto");
+    focusTextArea();
+  }
 }
+
 
 function desencriptarMensaje() {
     if (textoEntrada.value != "") {
