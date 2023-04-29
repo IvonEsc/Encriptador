@@ -38,16 +38,25 @@ function focusTextArea() {
 
 function encriptarMensaje() {
     if (textoEntrada.value != "") {
-        let mensajeEncriptado = textoEntrada.value;
-        mensajeEncriptado = mensajeEncriptado.replace(/e/gim, "enter");
-        mensajeEncriptado = mensajeEncriptado.replace(/i/gim, "imes");
-        mensajeEncriptado = mensajeEncriptado.replace(/a/gim, "ai");
-        mensajeEncriptado = mensajeEncriptado.replace(/o/gim, "ober");
-        mensajeEncriptado = mensajeEncriptado.replace(/u/gim, "ufat");        
-        textoSalida.innerHTML = mensajeEncriptado;
-        textoSalida.value = mensajeEncriptado;
-        actualizarPagina();
-    }
+        //verificacion se mayusculas y simbolos
+        let regExp = /^[a-z\s]+$/;
+        
+        if (regExp.test(textoEntrada.value)){
+            let mensajeEncriptado = textoEntrada.value;
+            mensajeEncriptado = mensajeEncriptado.replace(/e/gim, "enter");
+            mensajeEncriptado = mensajeEncriptado.replace(/i/gim, "imes");
+            mensajeEncriptado = mensajeEncriptado.replace(/a/gim, "ai");
+            mensajeEncriptado = mensajeEncriptado.replace(/o/gim, "ober");
+            mensajeEncriptado = mensajeEncriptado.replace(/u/gim, "ufat");        
+            textoSalida.innerHTML = mensajeEncriptado;
+            textoSalida.value = mensajeEncriptado;
+            actualizarPagina();
+        }
+        else{
+            myAlert("Por favor escribe un texto valido!"
+            focusTextArea();
+        }
+    }   
     else {
         myAlert("Por favor escribe un texto");
         focusTextArea();
