@@ -510,7 +510,7 @@ section {
     .footer-distributed {
 		font: bold 12px sans-serif;
         padding: 1em 2.5em;
-        
+        margin-top: 6vh;
 	}
     .footer-distributed .footer-left,
 	.footer-distributed .footer-right{
