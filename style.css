@@ -456,7 +456,7 @@ section {
     .main { 
         
         flex-direction: column;
-        max-height: 80vh;
+        max-height: inherit;
     }
     .main .logo,
     .main .container,
@@ -485,7 +485,7 @@ section {
         padding: 1em 2em 1em;
     }
     .main .container .input_text textarea{
-        height: 25vh;
+        height: 20vh;
     }
     .main .result .result{
         width: 100%;
@@ -520,7 +520,7 @@ section {
     .footer-distributed .footer-left,
 	.footer-distributed .footer-right{
 		float: none;
-		max-width: 32vh;
+		max-width: 32vw;
 		margin: 0 auto;
 	}
     
