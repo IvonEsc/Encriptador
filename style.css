@@ -498,6 +498,11 @@ section {
         max-height: 30vh;
         margin: 2.5em;
     }
+    .main .result .result .result_output{
+	font-weight: 400;
+	padding: 1em;
+	height: 70%;
+    }
     main .result .no_output img{
         display: none;
     }
